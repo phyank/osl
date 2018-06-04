@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hiro/oslab/oslab2/main.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+sys/wait.h
+-
+sys/types.h
+-
+sys/msg.h
+-
+sys/shm.h
+-
+sys/sem.h
+-
+sys/errno.h
+-
+setjmp.h
+-
+
