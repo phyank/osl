@@ -180,7 +180,7 @@ int main() {
         shmctl(sharemem,IPC_RMID,none);//Delete all IPC.
         printf("...\nAll IPCs deleted. Parent now change its image to /bin/id:\n\n");
 
-        char* exec_path="/bin/id";//The executable to run.
-        execl(exec_path,"0",(char*)0);//Change progress image.
+        char* exec_path="id";//The executable to run.
+        execlp(exec_path,"0",(char*)0);//Change progress image.
     }
 }
